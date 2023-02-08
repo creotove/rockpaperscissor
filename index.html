@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors - Creotove</title>
+</head>
+<body onload="bodyLoaded()">
+    <div class="container">
+        <div class="heading">
+            <h1>Rock-Paper-Scissors</h1>
+        </div>
+        <div class="select-list">
+            <select class="rps-list" id="rps">
+                <option value="Rock">Rock</option>
+                <option value="Paper">paper</option>
+                <option value="Scissor">Scissor</option>
+            </select>
+        </div>
+        <div class="images" id="images">
+            <img class="ima" id="you" src="assets/images/rock.png" alt=""><div class="you you1">You</div>
+            <img class="ima flip" id="computer" src="assets/images/rock.png" alt=""><div class="you you2">Computer</div>
+        </div>
+        <div class="center">
+            
+            
+        </div>
+        <div class="btn">
+            <input type="button" id="play" class="play" value="Play">
+        </div>
+
+    </div>
+    <div class="scoreDisplay">
+        <table>
+            <tr>
+                <td>Your Score</td>
+                <td>Compute Score</td>
+            </tr>
+        <tr>
+                <td id="userScore">0</td>
+                <td id="computerScore">0</td>
+            </tr>
+        </table>
+    </div>
+    <div id="finalWiner"></div>
+</body>
+<script src="script.js"></script>
+</html>
